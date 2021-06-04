@@ -1,7 +1,7 @@
 ﻿namespace NServiceBus
 {
+    using System;
     using Logging;
-    using Logging.NLog;
 
     /// <summary>
     /// Configure NServiceBus logging messages to use NLog.  Use by calling <see cref="LogManager.Use{T}"/> the T is <see cref="NLogFactory"/>.
@@ -17,7 +17,7 @@
         /// </summary>
         protected override ILoggerFactory GetLoggingFactory()
         {
-            return new LoggerFactory();
+            throw new NotImplementedException("NServiceBus is now providing support for logging libraries through the Microsoft.Extensions.Logging abstraction. Remove the NServiceBus.NLog package. Install the NServiceBus.Extensions.Logging and NLog.Extensions.Logging packages instead.");
         }
     }
 }

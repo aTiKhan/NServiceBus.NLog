@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net472;netcoreapp2.1</TargetFrameworks>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>$(SolutionDir)NServiceBus.snk</AssemblyOriginatorKeyFile>
     <Description>NLog support for NServiceBus</Description>
@@ -9,10 +9,10 @@
 
   <ItemGroup>
     <PackageReference Include="NLog" Version="[4.5.3, 5.0.0)" />
-    <PackageReference Include="NServiceBus" Version="[7.0.0, 8.0.0)" />
-    <PackageReference Include="Fody" Version="6.1.1" PrivateAssets="All" />
+    <PackageReference Include="NServiceBus" Version="[8.0.0-alpha.541, 9.0.0)" />
+    <PackageReference Include="Fody" Version="6.5.1" PrivateAssets="All" />
     <PackageReference Include="Obsolete.Fody" Version="5.2.1" PrivateAssets="All" />
-    <PackageReference Include="Particular.Packaging" Version="0.6.2" PrivateAssets="All" />
+    <PackageReference Include="Particular.Packaging" Version="1.2.1" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
